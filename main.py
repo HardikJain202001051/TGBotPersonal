@@ -5,6 +5,9 @@ from selenium import webdriver
 # from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 import tweepy
+from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
+
 TOKEN = '1402226931:AAGKobkwOobTQPkKcby6M7u9pz3C6mg-zEI'
 API_Key = '0fVMGzefYUNsNgDWZoLUFEx4F'
 API_Key_Secret = 'LrWwApOzu9Z1IPgbHGXjmAPoAySVhnjaX5uDjVez5diVsYMVmL'
