@@ -13,7 +13,6 @@ API_Key_Secret = 'LrWwApOzu9Z1IPgbHGXjmAPoAySVhnjaX5uDjVez5diVsYMVmL'
 allowed_users = [1462381549, 1518770169, 1144079321, 1243579615, 1505554149, 1498556745]
 auth = tweepy.OAuthHandler(API_Key, API_Key_Secret)
 api = tweepy.API(auth)
-
 chrome_options = Options()
 chrome_options.add_argument('--no-sandbox')
 chrome_options.add_argument('--disable-dev-shm-usage')
