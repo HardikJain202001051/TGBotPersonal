@@ -1,4 +1,3 @@
-from ast import literal_eval as l
 from selenium.webdriver.common.by import By
 from telegram.ext import Updater, MessageHandler, CommandHandler, Filters
 import requests
@@ -6,7 +5,6 @@ from selenium import webdriver
 # from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 import tweepy
-import os
 TOKEN = '1402226931:AAGKobkwOobTQPkKcby6M7u9pz3C6mg-zEI'
 API_Key = '0fVMGzefYUNsNgDWZoLUFEx4F'
 API_Key_Secret = 'LrWwApOzu9Z1IPgbHGXjmAPoAySVhnjaX5uDjVez5diVsYMVmL'
@@ -18,7 +16,7 @@ def welcome(update, context):
     #r = 'https://api.telegram.org/bot'+TOKEN+'/sendMessage?chat_id='+'@DevelopmentNewsIndia'+'&text=Hello World!'
 
 def message_action(update, context):
-    if update.message.chat_id in l(allowed_users):
+    if update.message.chat_id in allowed_users:
         link = update.message.text
         ids = link.split('/')[-1].split('?')[0]
         auth = tweepy.OAuthHandler(API_Key, API_Key_Secret)
