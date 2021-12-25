@@ -2,4 +2,3 @@ selenium
 requests
 tweepy
 python-telegram-bot
-webdriver_manager
