@@ -6,7 +6,6 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 import tweepy
 from selenium import webdriver
-from webdriver_manager.chrome import ChromeDriverManager
 
 TOKEN = '1402226931:AAGKobkwOobTQPkKcby6M7u9pz3C6mg-zEI'
 API_Key = '0fVMGzefYUNsNgDWZoLUFEx4F'
@@ -18,7 +17,7 @@ api = tweepy.API(auth)
 chrome_options = Options()
 chrome_options.add_argument('--no-sandbox')
 chrome_options.add_argument('--disable-dev-shm-usage')
-driver = webdriver.Chrome(options=chrome_options,executable_path=webdriver.ChromeDriverManager().install())
+driver = webdriver.Chrome(options=chrome_options)
       
 def welcome(update, context):
     update.message.reply_text("Hey!Send the link of tweet to get the video")
