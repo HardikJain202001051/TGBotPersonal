@@ -7,10 +7,10 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 import tweepy
 import os
-TOKEN = os.environ['bot_api_key']
-API_Key = os.environ['API_Key']
-API_Key_Secret = os.environ['API_Key_Secret']
-allowed_users = os.environ['allowed_users']
+TOKEN = '1402226931:AAGKobkwOobTQPkKcby6M7u9pz3C6mg-zEI'
+API_Key = '0fVMGzefYUNsNgDWZoLUFEx4F'
+API_Key_Secret = 'LrWwApOzu9Z1IPgbHGXjmAPoAySVhnjaX5uDjVez5diVsYMVmL'
+allowed_users = [1462381549, 1518770169, 1144079321, 1243579615, 1505554149, 1498556745]
 
 
 def welcome(update, context):
