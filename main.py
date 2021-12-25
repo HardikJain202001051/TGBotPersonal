@@ -29,7 +29,7 @@ def message_action(update, context):
         chrome_options = Options()
         chrome_options.add_argument('--no-sandbox')
         chrome_options.add_argument('--disable-dev-shm-usage')
-        driver = webdriver.Chrome(options=chrome_options)
+        driver = webdriver.Chrome(options=chrome_options,executable_path=ChromeDriverManager().install())
         driver.get(site)
         field = driver.find_element(By.NAME, 'tweet')
         field.send_keys(link)
