@@ -1,4 +1,3 @@
 selenium
 requests
-tweepy
 python-telegram-bot
