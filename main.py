@@ -7,10 +7,11 @@ from selenium.webdriver.chrome.options import Options
 import tweepy
 from selenium import webdriver
 
-TOKEN = '1402226931:AAGKobkwOobTQPkKcby6M7u9pz3C6mg-zEI'
-API_Key = '0fVMGzefYUNsNgDWZoLUFEx4F'
-API_Key_Secret = 'LrWwApOzu9Z1IPgbHGXjmAPoAySVhnjaX5uDjVez5diVsYMVmL'
-allowed_users = [1462381549, 1518770169, 1144079321, 1243579615, 1505554149, 1498556745]
+#following secrets have been removed
+TOKEN = ''
+API_Key = ''
+API_Key_Secret = ''
+allowed_users = [] #list of allowed users
 auth = tweepy.OAuthHandler(API_Key, API_Key_Secret)
 api = tweepy.API(auth)
 chrome_options = Options()
